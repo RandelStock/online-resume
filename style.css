@@ -1,0 +1,238 @@
+*
+{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+ background: gray;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left_side
+{
+    position: relative;
+    padding: 50px;
+    background: #003147;
+}
+
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2
+{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo 
+{
+    padding-top: 40px;
+}
+
+.title
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul
+{
+    position: relative;
+
+}
+
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span
+{
+    color: white;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+}
+
+
+.container .right_side
+{
+    position: relative;
+    padding: 50px;
+    background: white;
+}
+
+.about
+{
+    margin-bottom: 50px;
+}
+
+.about:last-child
+{
+    margin-bottom: 0;
+}
+
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about .box 
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year
+{
+    min-width: 150px;
+    
+}
+
+.about .box .year h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.text1
+{
+    text-transform: uppercase;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.text2
+{
+    text-transform: uppercase;
+    margin-left: 135px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.text3
+{
+    text-transform: uppercase;
+    margin-left: 195px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.objective
+{
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .main{
+        flex-direction: column;
+    }
+    .left,
+    .right{
+        flex: none;
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 15px;
+    }
+
